@@ -1,19 +1,17 @@
 body{
     margin: 0px;
-    padding: 0px;
-    background-color: #fa4659;
+    background: fixed linear-gradient(#21C08B, #AB88FF);
     font-family: 'Mulish', sans-serif;
 }
 .header{
-    align-items: center;
-    background-color: #fa4659;
+    /* background-color: #21C08B; */
     color: white;
-    width: 100%;
-    height: 100px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     top: 0px;
-    
+    width: 100%;
+    height: 80px;
 }
 .header__img{
     width: 200px;
@@ -74,7 +72,7 @@ body{
     font-size: 25px;
 }
 .main__input{
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255,255,255,0.2);
     border: 2px solid white;
     border-radius: 40px;
     color: white;
@@ -111,7 +109,7 @@ body{
     justify-content: space-between;    
 }
 .btn-lista, .btn-tendencias, .btn-recomendados{
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.3);
     border: none;
     border-radius: 25px;
     color: white;
@@ -129,20 +127,19 @@ body{
     box-sizing: border-box;
     overflow-x: hidden;
     position: relative; 
-    border: 1px solid white;
+    /* border: 1px solid white; */
     padding: 0px 20px;
 }
 
 
 .carousel__container{
-    border: 1px solid black;
-
+    /* border: 1px solid black; */
     white-space:nowrap;
     margin: 55px 0;
     padding: 10px;
 }
 .carousel-item{
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     background-color: palevioletred;
     font-size: 20px;
     width: 200px;
@@ -177,7 +174,7 @@ body{
     padding: 0px;
     position: absolute;
     top: 0;
-    left: 10px;
+    left: 0px;
     right: 0;
     bottom: 0;
 }
@@ -196,7 +193,7 @@ body{
 .carousel__container:hover .carousel-item:hover{
     transform: scale(1.5);
     opacity: 1;
-    border: 3px solid pink;
+    /* border: 3px solid pink; */
 }
 
 .carousel-item__details--title, .carousel-item__details--description{
@@ -205,12 +202,146 @@ body{
 }
 
 
+/* page iniciar sesion and regiistro++++++++ */
+
+/* login container+++ and login register++++++ */
+.login{
+    /* background: linear-gradient(#21C08B, #AB88FF); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 30px;
+    min-height: calc(100vh - 200px);    
+}
+.login__container{
+    background-color: rgba(255,255,255,0.1);
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 60px 68px 40px;
+    width: 300px;
+    min-height: 400px;
+}
+.login__container--form{
+    display: flex;
+    flex-direction: column;
+}
+.login__container--form label{
+    font-size: 14px;
+}
+.login__container--remember-me{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.login__container--remember-me a{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+.login__container--remember-me a:hover{
+    text-decoration: underline;
+}
+.login__container--social-media > div{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.login__container--social-media > div > img{
+    width: 30px;
+    margin-right: 10px;
+}
+.login__container--register, .login__container--login{
+    font-size: 14px;
+}
+.login__container--register a, .login__container--login a{
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+.login__container--login{
+    text-align: center;   
+}
+.login__container--register a:hover, .login__container--login a:hover{
+    text-decoration: underline;
+}
+.input{
+    background-color: transparent;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid white;
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    outline: none;
+    height: 50px;
+}
+::placeholder{
+    color: white;
+}
+.button{
+    background-color: rgba(255,255,255,0.1);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Mulish', sans-serif;
+    height: 50px;
+    letter-spacing: 2px;
+    margin: 10px 0px;
+    outline: none;
+}
+
+.button:hover{
+    background-color: rgba(255,255,255,0.2);
+}
+.button:active{
+    background-color: #21C08B;
+}
+
+
+/* page not found++++++++++++ */
+.box-404 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    padding: 120    px 0px;
+  }
+.box_text {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+.box_animated{
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-iteration-count:infinite;
+}
+@keyframes pulse{
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+.box_pulse{
+    animation-name: pulse;
+    animation-duration: 1s
+}
 
 
 /*footer*/
 
 .footer{
-    background: #fa4659;
+    /* background: #AB88FF; */
     display: flex;
     align-items: center ;
     height: 100px;
@@ -238,5 +369,9 @@ body{
         white-space: nowrap;
         margin: 70px 0px;
         padding-bottom: 10px;
+    }
+    .footer{
+        align-items: flex-start;
+        flex-direction: column;
     }
 } 

@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./styles.css">
     <title>Pagina Principal</title>
 </head>
 <body>
@@ -21,7 +21,7 @@
                 <p>Perfil</p>
             </div>
             <ul>
-                <li><a href="/">Cuenta</a></li>
+                <li><a href="">Cuenta</a></li>
                 <li><a href="/">Cerrar Sesión</a></li>
             </ul>            
         </div>
@@ -30,7 +30,7 @@
     <!-- espacio de busqueda**********-->
 
     <section class="main"> 
-        <h2 class="main__title">Que quieres ver hoy???</h2>
+        <h2 class="main__title">Que quieres ver hoy?</h2>
         <input class="main__input" type="text" placeholder="Buscar...">
     </section>
 
@@ -351,20 +351,18 @@
                     <p class="carousel-item__details--title">TItulo descriptivo</p>
                     <p class="carousel-item__details--description">2019 16+ 114min</p>
                 </div>
-            </div>           
+            </div>
         </div>
     </section>
-
-
    
 
     <!--Footer-->
 
-        <footer class="footer">
-            <a href="#">Terminos de uso</a>
-            <a href="#">Declaración de privacidad</a>
-            <a href="#">Centro de ayuda</a>
-        </footer>
+    <footer class="footer">
+        <a href="#">Terminos de uso</a>
+        <a href="#">Declaración de privacidad</a>
+        <a href="#">Centro de ayuda</a>
+    </footer>
     
 
     <script>
@@ -378,49 +376,49 @@
         }*/
         // lista+++++++++++
         var lista = document.getElementById('elementos-lista');
-        var botoes = document.querySelectorAll(".btn-lista");
+        var botones = document.querySelectorAll(".btn-lista");
         
-        var voltar = botoes[0];
-        var avancar = botoes[1];
+        var volver = botones[0];
+        var avanzar = botones[1];
 
         function mover(direccion) {
         lista.scrollLeft += 100 * direccion;
         var inicio = lista.scrollLeft == 0;
-        var fim = lista.clientWidth + lista.scrollLeft - lista.scrollWidth;
-        voltar.style.opacity = inicio ? 0 : 1;
-        avancar.style.opacity = fim ? 1 : 0;
+        var fin = lista.clientWidth + lista.scrollLeft - lista.scrollWidth;
+        volver.style.opacity = inicio ? 0 : 1;
+        avanzar.style.opacity = fin ? 1 : 0;
         }
 
 
         // tendencias+++++
         var tendencias = document.getElementById('elementos-tendencias');
-        var botoes2 = document.querySelectorAll(".btn-tendencias");
+        var botones2 = document.querySelectorAll(".btn-tendencias");
         
-        var voltar2 = botoes2[0];
-        var avancar2 = botoes2[1];
+        var volver2 = botones2[0];
+        var avanzar2 = botones2[1];
 
         function mover2(direccion) {
         tendencias.scrollLeft += 100 * direccion;
         var inicio2 = tendencias.scrollLeft == 0;
-        var fim2 = tendencias.clientWidth + tendencias.scrollLeft - tendencias.scrollWidth;
-        voltar2.style.opacity = inicio2 ? 0 : 1;
-        avancar2.style.opacity = fim2 ? 1 : 0;
+        var fin2 = tendencias.clientWidth + tendencias.scrollLeft - tendencias.scrollWidth;
+        volver2.style.opacity = inicio2 ? 0 : 1;
+        avanzar2.style.opacity = fin2 ? 1 : 0;
         }
 
 
         // recomendados++++++
         var recomendados = document.getElementById('elementos-recomendados');
-        var botoes3 = document.querySelectorAll(".btn-recomendados");
+        var botones3 = document.querySelectorAll(".btn-recomendados");
         
-        var voltar3 = botoes3[0];
-        var avancar3 = botoes3[1];
+        var volver3 = botones3[0];
+        var avanzar3 = botones3[1];
 
         function mover3(direccion) {
         recomendados.scrollLeft += 100 * direccion;
         var inicio3 = recomendados.scrollLeft == 0;
-        var fim3 = recomendados.clientWidth + recomendados.scrollLeft - recomendados.scrollWidth;
-        voltar3.style.opacity = inicio3 ? 0 : 1;
-        avancar3.style.opacity = fim3 ? 1 : 0;
+        var fin3 = recomendados.clientWidth + recomendados.scrollLeft - recomendados.scrollWidth;
+        volver3.style.opacity = inicio3 ? 0 : 1;
+        avanzar3.style.opacity = fin3 ? 1 : 0;
         }
 
     </script>
