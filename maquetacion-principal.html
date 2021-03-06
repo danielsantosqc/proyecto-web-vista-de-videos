@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./style.css">
+    <title>Pagina Principal</title>
+</head>
+<body>
+
+    <!-- header*****************-->
+
+    <header class="header">
+        <img class="header__img" src="./images/logo-platzi.png" alt="">
+        <div class="header__menu">
+            <div class="header__menu--profile">
+                <img src="./images/icon-user.png" alt="user">
+                <p>Perfil</p>
+            </div>
+            <ul>
+                <li><a href="/">Cuenta</a></li>
+                <li><a href="/">Cerrar Sesión</a></li>
+            </ul>            
+        </div>
+    </header>
+
+    <!-- espacio de busqueda**********-->
+
+    <section class="main"> 
+        <h2 class="main__title">Que quieres ver hoy???</h2>
+        <input class="main__input" type="text" placeholder="Buscar...">
+    </section>
+
+    <!-- inicio carrucel*************************************************************************************-->
+
+    <!-- carrosel de imagenes mi lista-->
+
+    <h2 class="categories__title">Mi Lista</h2>
+
+    <div class="button-carousel">
+        <input class="btn-lista" type="button"  value="&lt; Volver" onclick="mover(-1)" style="opacity: 0">
+        <input class="btn-lista" type="button"  value="Avanzar &gt;" onclick="mover(1);">
+    </div>
+
+    <section class="carousel" id="elementos-lista">    
+        <div class="carousel__container" >      
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="./music-images/pexels-andrea-piacquadio-761963.jpg" alt="People">
+                <div class="carousel-item__details">
+                    <div>
+                        <img class="carousel-item__details--img" src="./music-images/icon-play.png" alt="Play">
+                        <img class="carousel-item__details--img" src="./music-images/icon-plus.png" alt="Plus">
+                    </div>
+                    <p class="carousel-item__details--title">TItulo descriptivo</p>
+                    <p class="carousel-item__details--description">2019 16+ 114min</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="./music-images/pexels-breakingpic-3104.jpg" alt="People">
+                <div class="carousel-item__details">
+                    <div>
+                        <img class="carousel-item__details--img" src="./music-images/icon-play.png" alt="Play">
+                        <img class="carousel-item__details--img" src="./music-images/icon-plus.png" alt="Plus">
+                    </div>
+                    <p class="carousel-item__details--title">TItulo descriptivo</p>
+                    <p class="carousel-item__details--description">2019 16+ 114min</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="./music-images/pexels-burst-373945.jpg" alt="People">
+                <div class="carousel-item__details">
+                    <div>
+                        <img class="carousel-item__details--img" src="./music-images/icon-play.png" alt="Play">
+                        <img class="carousel-item__details--img" src="./music-images/icon-plus.png" alt="Plus">
+                    </div>
+                    <p class="carousel-item__details--title">TItulo descriptivo</p>
+                    <p class="carousel-item__details--description">2019 16+ 114min</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="./music-images/pexels-elviss-railijs-bitāns-1389429.jpg" alt="People">
+                <div class="carousel-item__details">
+                    <div>
+                        <img class="carousel-item__details--img" src="./music-images/icon-play.png" alt="Play">
+                        <img class="carousel-item__details--img" src="./music-images/icon-plus.png" alt="Plus">
+                    </div>
+                    <p class="carousel-item__details--title">TItulo descriptivo</p>
+                    <p class="carousel-item__details--description">2019 16+ 114min</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="./music-images/pexels-freestocksorg-96380.jpg" alt="People">
+                <div class="carousel-item__details">
+                    <div>
+                        <img class="carousel-item__details--img" src="./music-images/icon-play.png" alt="Play">
+                        <img class="carousel-item__details--img" src="./music-images/icon-plus.png" alt="Plus">
+                    </div>
+                    <p class="carousel-item__details--title">TItulo descriptivo</p>
+                    <p class="carousel-item__details--description">2019 16+ 114min</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="./music-images/pexels-josh-sorenson-995301.jpg" alt="People">
+                <div class="carousel-item__details">
+                    <div>
+                        <img class="carousel-item__details--img" src="./music-images/icon-play.png" alt="Play">
+                        <img class="carousel-item__details--img" src="./music-images/icon-plus.png" alt="Plus">
+                    </div>
+                    <p class="carousel-item__details--title">TItulo descriptivo</p>
+                    <p class="carousel-item__details--description">2019 16+ 114min</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="./music-images/pexels-kaboompics-com-6320.jpg" alt="People">
+                <div class="carousel-item__details">
+                    <div>
+                        <img class="carousel-item__details--img" src="./music-images/icon-play.png" alt="Play">
+                        <img class="carousel-item__details--img" src="./music-images/icon-plus.png" alt="Plus">
+                    </div>
+                    <p class="carousel-item__details--title">TItulo descriptivo</p>
+                    <p class="carousel-item__details--description">2019 16+ 114min</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="./music-images/pexels-marcelo-chagas-1876279.jpg" alt="People">
+                <div class="carousel-item__details">
+                    <div>
+                        <img class="carousel-item__details--img" src="./music-images/icon-play.png" alt="Play">
+                        <img class="carousel-item__details--img" src="./music-images/icon-plus.png" alt="Plus">
+                    </div>
+                    <p class="carousel-item__details--title">TItulo descriptivo</p>
+                    <p class="carousel-item__details--description">2019 16+ 114min</p>
+                </div>
+            </div>           
+        </div>
+    </section>
+
+
+<!-- carrosel de imagenes tendencai-->
+
+    <h2 class="categories__title">Tendencias</h2>
+
+    <div class="button-carousel">
+        <input class="btn-tendencias" type="button"  value="&lt; Volver" onclick="mover2(-1)" style="opacity: 0">
+        <input class="btn-tendencias" type="button"  value="Avanzar &gt;" onclick="mover2(1);">
+    </div>
+
+    <section class="carousel" id="elementos-tendencias">    
+        <div class="carousel__container" >      
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="./music-images/pexels-miguel-á-padriñán-167092.jpg" alt="People">
+                <div class="carousel-item__details">
+                    <div>
+                        <img class="carousel-item__details--img" src="./music-images/icon-play.png" alt="Play">
+                        <img class="carousel-item__details--img" src="./music-images/icon-plus.png" alt="Plus">
+                    </div>
+                    <p class="carousel-item__details--title">TItulo descriptivo</p>
+                    <p class="carousel-item__details--description">2019 16+ 114min</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="./music-images/pexels-pixabay-164821.jpg" alt="People">
+                <div class="carousel-item__details">
+                    <div>
+                        <img class="carousel-item__details--img" src="./music-images/icon-play.png" alt="Play">
+                        <img class="carousel-item__details--img" src="./music-images/icon-plus.png" alt="Plus">
+                    </div>
+                    <p class="carousel-item__details--title">TItulo descriptivo</p>
+                    <p class="carousel-item__details--description">2019 16+ 114min</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="./music-images/pexels-pixabay-257904.jpg" alt="People">
+                <div class="carousel-item__details">
+                    <div>
+                        <img class="carousel-item__details--img" src="./music-images/icon-play.png" alt="Play">
+                        <img class="carousel-item__details--img" src="./music-images/icon-plus.png" alt="Plus">
+                    </div>
+                    <p class="carousel-item__details--title">TItulo descriptivo</p>
+                    <p class="carousel-item__details--description">2019 16+ 114min</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="./music-images/pexels-pixabay-33597.jpg" alt="People">
+                <div class="carousel-item__details">
+                    <div>
+                        <img class="carousel-item__details--img" src="./music-images/icon-play.png" alt="Play">
+                        <img class="carousel-item__details--img" src="./music-images/icon-plus.png" alt="Plus">
+                    </div>
+                    <p class="carousel-item__details--title">TItulo descriptivo</p>
+                    <p class="carousel-item__details--description">2019 16+ 114min</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="./music-images/pexels-pixabay-534283.jpg" alt="People">
+                <div class="carousel-item__details">
+                    <div>
+                        <img class="carousel-item__details--img" src="./music-images/icon-play.png" alt="Play">
+                        <img class="carousel-item__details--img" src="./music-images/icon-plus.png" alt="Plus">
+                    </div>
+                    <p class="carousel-item__details--title">TItulo descriptivo</p>
+                    <p class="carousel-item__details--description">2019 16+ 114min</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="./music-images/pexels-skitterphoto-675960.jpg" alt="People">
+                <div class="carousel-item__details">
+                    <div>
+                        <img class="carousel-item__details--img" src="./music-images/icon-play.png" alt="Play">
+                        <img class="carousel-item__details--img" src="./music-images/icon-plus.png" alt="Plus">
+                    </div>
+                    <p class="carousel-item__details--title">TItulo descriptivo</p>
+                    <p class="carousel-item__details--description">2019 16+ 114min</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="./music-images/pexels-snapwire-6966.jpg" alt="People">
+                <div class="carousel-item__details">
+                    <div>
+                        <img class="carousel-item__details--img" src="./music-images/icon-play.png" alt="Play">
+                        <img class="carousel-item__details--img" src="./music-images/icon-plus.png" alt="Plus">
+                    </div>
+                    <p class="carousel-item__details--title">TItulo descriptivo</p>
+                    <p class="carousel-item__details--description">2019 16+ 114min</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="./music-images/pexels-stas-knop-1626481.jpg" alt="People">
+                <div class="carousel-item__details">
+                    <div>
+                        <img class="carousel-item__details--img" src="./music-images/icon-play.png" alt="Play">
+                        <img class="carousel-item__details--img" src="./music-images/icon-plus.png" alt="Plus">
+                    </div>
+                    <p class="carousel-item__details--title">TItulo descriptivo</p>
+                    <p class="carousel-item__details--description">2019 16+ 114min</p>
+                </div>
+            </div>           
+        </div>
+    </section>
+
+<!-- carrosel de videós recomendados-->
+
+    <h2 class="categories__title">Videós Recomendados</h2>
+
+    <div class="button-carousel">
+        <input class="btn-recomendados" type="button"  value="&lt; Volver" onclick="mover3(-1)" style="opacity: 0">
+        <input class="btn-recomendados" type="button"  value="Avanzar &gt;" onclick="mover3(1);">
+    </div>    
+
+    <section class="carousel" id="elementos-recomendados">    
+        <div class="carousel__container" >      
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="./music-images//pexels-stephen-niemeier-63703.jpg" alt="People">
+                <div class="carousel-item__details">
+                    <div>
+                        <img class="carousel-item__details--img" src="./music-images/icon-play.png" alt="Play">
+                        <img class="carousel-item__details--img" src="./music-images/icon-plus.png" alt="Plus">
+                    </div>
+                    <p class="carousel-item__details--title">TItulo descriptivo</p>
+                    <p class="carousel-item__details--description">2019 16+ 114min</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="./music-images/pexels-burst-373945.jpg" alt="People">
+                <div class="carousel-item__details">
+                    <div>
+                        <img class="carousel-item__details--img" src="./music-images/icon-play.png" alt="Play">
+                        <img class="carousel-item__details--img" src="./music-images/icon-plus.png" alt="Plus">
+                    </div>
+                    <p class="carousel-item__details--title">TItulo descriptivo</p>
+                    <p class="carousel-item__details--description">2019 16+ 114min</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="./music-images/pexels-vishnu-r-nair-1105666.jpg" alt="People">
+                <div class="carousel-item__details">
+                    <div>
+                        <img class="carousel-item__details--img" src="./music-images/icon-play.png" alt="Play">
+                        <img class="carousel-item__details--img" src="./music-images/icon-plus.png" alt="Plus">
+                    </div>
+                    <p class="carousel-item__details--title">TItulo descriptivo</p>
+                    <p class="carousel-item__details--description">2019 16+ 114min</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="./music-images/pexels-fernando-arcos-191240.jpg" alt="People">
+                <div class="carousel-item__details">
+                    <div>
+                        <img class="carousel-item__details--img" src="./music-images/icon-play.png" alt="Play">
+                        <img class="carousel-item__details--img" src="./music-images/icon-plus.png" alt="Plus">
+                    </div>
+                    <p class="carousel-item__details--title">TItulo descriptivo</p>
+                    <p class="carousel-item__details--description">2019 16+ 114min</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="./music-images/pexels-wendy-wei-1190297.jpg" alt="People">
+                <div class="carousel-item__details">
+                    <div>
+                        <img class="carousel-item__details--img" src="./music-images/icon-play.png" alt="Play">
+                        <img class="carousel-item__details--img" src="./music-images/icon-plus.png" alt="Plus">
+                    </div>
+                    <p class="carousel-item__details--title">TItulo descriptivo</p>
+                    <p class="carousel-item__details--description">2019 16+ 114min</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="./music-images/pexels-vlad-bagacian-1337753.jpg" alt="People">
+                <div class="carousel-item__details">
+                    <div>
+                        <img class="carousel-item__details--img" src="./music-images/icon-play.png" alt="Play">
+                        <img class="carousel-item__details--img" src="./music-images/icon-plus.png" alt="Plus">
+                    </div>
+                    <p class="carousel-item__details--title">TItulo descriptivo</p>
+                    <p class="carousel-item__details--description">2019 16+ 114min</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="./music-images/pexels-ylanite-koppens-934067.jpg" alt="People">
+                <div class="carousel-item__details">
+                    <div>
+                        <img class="carousel-item__details--img" src="./music-images/icon-play.png" alt="Play">
+                        <img class="carousel-item__details--img" src="./music-images/icon-plus.png" alt="Plus">
+                    </div>
+                    <p class="carousel-item__details--title">TItulo descriptivo</p>
+                    <p class="carousel-item__details--description">2019 16+ 114min</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="./music-images/pexels-wendy-wei-1190297.jpg" alt="People">
+                <div class="carousel-item__details">
+                    <div>
+                        <img class="carousel-item__details--img" src="./music-images/icon-play.png" alt="Play">
+                        <img class="carousel-item__details--img" src="./music-images/icon-plus.png" alt="Plus">
+                    </div>
+                    <p class="carousel-item__details--title">TItulo descriptivo</p>
+                    <p class="carousel-item__details--description">2019 16+ 114min</p>
+                </div>
+            </div>           
+        </div>
+    </section>
+
+
+   
+
+    <!--Footer-->
+
+        <footer class="footer">
+            <a href="#">Terminos de uso</a>
+            <a href="#">Declaración de privacidad</a>
+            <a href="#">Centro de ayuda</a>
+        </footer>
+    
+
+    <script>
+
+        /*function avanzar() {
+            document.getElementById('elementos').scrollLeft += 20;
+        }
+
+        function volver() {
+            document.getElementById('elementos').scrollLeft -= 20;
+        }*/
+        // lista+++++++++++
+        var lista = document.getElementById('elementos-lista');
+        var botoes = document.querySelectorAll(".btn-lista");
+        
+        var voltar = botoes[0];
+        var avancar = botoes[1];
+
+        function mover(direccion) {
+        lista.scrollLeft += 100 * direccion;
+        var inicio = lista.scrollLeft == 0;
+        var fim = lista.clientWidth + lista.scrollLeft - lista.scrollWidth;
+        voltar.style.opacity = inicio ? 0 : 1;
+        avancar.style.opacity = fim ? 1 : 0;
+        }
+
+
+        // tendencias+++++
+        var tendencias = document.getElementById('elementos-tendencias');
+        var botoes2 = document.querySelectorAll(".btn-tendencias");
+        
+        var voltar2 = botoes2[0];
+        var avancar2 = botoes2[1];
+
+        function mover2(direccion) {
+        tendencias.scrollLeft += 100 * direccion;
+        var inicio2 = tendencias.scrollLeft == 0;
+        var fim2 = tendencias.clientWidth + tendencias.scrollLeft - tendencias.scrollWidth;
+        voltar2.style.opacity = inicio2 ? 0 : 1;
+        avancar2.style.opacity = fim2 ? 1 : 0;
+        }
+
+
+        // recomendados++++++
+        var recomendados = document.getElementById('elementos-recomendados');
+        var botoes3 = document.querySelectorAll(".btn-recomendados");
+        
+        var voltar3 = botoes3[0];
+        var avancar3 = botoes3[1];
+
+        function mover3(direccion) {
+        recomendados.scrollLeft += 100 * direccion;
+        var inicio3 = recomendados.scrollLeft == 0;
+        var fim3 = recomendados.clientWidth + recomendados.scrollLeft - recomendados.scrollWidth;
+        voltar3.style.opacity = inicio3 ? 0 : 1;
+        avancar3.style.opacity = fim3 ? 1 : 0;
+        }
+
+    </script>
+</body>
+</html>
